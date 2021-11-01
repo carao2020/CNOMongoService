@@ -1,0 +1,27 @@
+{
+  "listeners": [
+    {
+      "queue": "CNO.ITXA.MONGODB.WRITE",
+      "service": {
+        "name": "Mongo CRUD Service",
+        "prefix": "MongoC"
+      },
+      "mq":
+      {
+        "replyQueue": "CNO.ITXA.MONGODB.REPLY",
+        "replyQM":"MFTQM"
+      },
+      "db":
+      {
+        "uri":"mongodb://192.168.1.167:27018",
+        "name":"GTM_CNO"
+      },
+      "class": "com.mqa.cno.impl.CNOMongoService",
+      "errors": 
+ 	{
+	   "queue": "CNO.ITXA.MONGODB.ERROR",
+        "expiry": 144000
+	}
+    }
+  ]
+}
