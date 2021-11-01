@@ -1,0 +1,310 @@
+2019-12-05 00:37:27.052 [main] INFO  com.mqa.daemonserver.cli.MQADaemonRunner - MQAttach Canada Inc Daemon Module (WMQMultiQueueReaderDaemon) v.01.00.00.02 
+© 2008 MQAttach Canada Inc and associated Companies - All rights reserved
+All other libraries in use copyright their respective owners
+2019-12-05 00:37:27.056 [main] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Initializing Daemon mqa.daemon.impl.WMQMultiQueueReaderDaemon
+2019-12-05 00:37:48.524 [main] INFO  com.mqa.daemonserver.cli.MQADaemonRunner - MQAttach Canada Inc Daemon Module (WMQMultiQueueReaderDaemon) v.01.00.00.02 
+© 2008 MQAttach Canada Inc and associated Companies - All rights reserved
+All other libraries in use copyright their respective owners
+2019-12-05 00:37:48.528 [main] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Initializing Daemon mqa.daemon.impl.WMQMultiQueueReaderDaemon
+2019-12-05 00:38:08.275 [main] INFO  com.mqa.daemonserver.cli.MQADaemonRunner - MQAttach Canada Inc Daemon Module (WMQMultiQueueReaderDaemon) v.01.00.00.02 
+© 2008 MQAttach Canada Inc and associated Companies - All rights reserved
+All other libraries in use copyright their respective owners
+2019-12-05 00:38:08.278 [main] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Initializing Daemon mqa.daemon.impl.WMQMultiQueueReaderDaemon
+2019-12-05 00:38:08.286 [main] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Initializing WMQ Reader CNO CCN 30 Day Duplication Service v. 01.00.00.01 
+2019-12-05 00:38:08.288 [pool-2-thread-1] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Starting the Daemon with 1 Threads...
+2019-12-05 00:38:09.359 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Startup Initializing...
+2019-12-05 00:38:09.359 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Initializing Based on Default Property File...
+2019-12-05 00:38:09.370 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Initializing...
+2019-12-05 00:38:09.870 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Loading 2 caches
+2019-12-05 00:38:09.870 [pool-3-thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to initialize the Cache
+java.lang.UnsupportedOperationException: null
+	at java.util.Collections$UnmodifiableMap.remove(Unknown Source) ~[?:1.8.0_221]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:391) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:241) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:173) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:38:09.912 [pool-3-thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to Initialize using Default Property File
+java.lang.UnsupportedOperationException: null
+	at java.util.Collections$UnmodifiableMap.remove(Unknown Source) ~[?:1.8.0_221]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:391) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:241) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:173) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:38:09.935 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Reloading Started - 2019-12-05 00:38:09.926
+2019-12-05 00:38:09.936 [pool-3-thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to Re-Load Data
+java.lang.NullPointerException: null
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.getReadCache(InfluxCacheServer.java:740) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.load(InfluxCacheServer.java:443) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:174) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:38:09.936 [pool-3-thread-1] FATAL CNO CCN 30 Day Duplication Service - Unable to Initialize Service - Monitoring will not be started
+java.lang.NullPointerException: null
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.getReadCache(InfluxCacheServer.java:740) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.load(InfluxCacheServer.java:443) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:174) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:38:53.436 [Thread-1] INFO  com.mqa.daemonserver.cli.MQADaemonRunner - Shutting down...
+2019-12-05 00:38:53.437 [Thread-1] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Stopping Daemon mqa.daemon.impl.WMQMultiQueueReaderDaemon...
+2019-12-05 00:38:53.437 [Thread-1] INFO  CNO CCN 30 Day Duplication Service - Termination Cleanup...
+2019-12-05 00:38:56.615 [main] INFO  com.mqa.daemonserver.cli.MQADaemonRunner - MQAttach Canada Inc Daemon Module (WMQMultiQueueReaderDaemon) v.01.00.00.02 
+© 2008 MQAttach Canada Inc and associated Companies - All rights reserved
+All other libraries in use copyright their respective owners
+2019-12-05 00:38:56.619 [main] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Initializing Daemon mqa.daemon.impl.WMQMultiQueueReaderDaemon
+2019-12-05 00:38:56.627 [main] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Initializing WMQ Reader CNO CCN 30 Day Duplication Service v. 01.00.00.01 
+2019-12-05 00:38:56.628 [pool-2-thread-1] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Starting the Daemon with 1 Threads...
+2019-12-05 00:38:57.669 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Startup Initializing...
+2019-12-05 00:38:57.670 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Initializing Based on Default Property File...
+2019-12-05 00:38:57.670 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Initializing...
+2019-12-05 00:38:58.149 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Loading 2 caches
+2019-12-05 00:38:58.150 [pool-3-thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to initialize the Cache
+java.lang.UnsupportedOperationException: null
+	at java.util.Collections$UnmodifiableMap.remove(Unknown Source) ~[?:1.8.0_221]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:391) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:241) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:173) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:38:58.191 [pool-3-thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to Initialize using Default Property File
+java.lang.UnsupportedOperationException: null
+	at java.util.Collections$UnmodifiableMap.remove(Unknown Source) ~[?:1.8.0_221]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:391) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:241) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:173) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:38:58.206 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Reloading Started - 2019-12-05 00:38:58.201
+2019-12-05 00:38:58.206 [pool-3-thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to Re-Load Data
+java.lang.NullPointerException: null
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.getReadCache(InfluxCacheServer.java:740) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.load(InfluxCacheServer.java:443) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:174) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:38:58.207 [pool-3-thread-1] FATAL CNO CCN 30 Day Duplication Service - Unable to Initialize Service - Monitoring will not be started
+java.lang.NullPointerException: null
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.getReadCache(InfluxCacheServer.java:740) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.load(InfluxCacheServer.java:443) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:174) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:39:28.753 [Thread-1] INFO  com.mqa.daemonserver.cli.MQADaemonRunner - Shutting down...
+2019-12-05 00:39:28.753 [Thread-1] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Stopping Daemon mqa.daemon.impl.WMQMultiQueueReaderDaemon...
+2019-12-05 00:39:28.753 [Thread-1] INFO  CNO CCN 30 Day Duplication Service - Termination Cleanup...
+2019-12-05 00:44:17.678 [main] INFO  com.mqa.daemonserver.cli.MQADaemonRunner - MQAttach Canada Inc Daemon Module (WMQMultiQueueReaderDaemon) v.01.00.00.02 
+© 2008 MQAttach Canada Inc and associated Companies - All rights reserved
+All other libraries in use copyright their respective owners
+2019-12-05 00:44:17.681 [main] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Initializing Daemon mqa.daemon.impl.WMQMultiQueueReaderDaemon
+2019-12-05 00:44:17.690 [main] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Initializing WMQ Reader CNO CCN 30 Day Duplication Service v. 01.00.00.01 
+2019-12-05 00:44:17.691 [pool-2-thread-1] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Starting the Daemon with 1 Threads...
+2019-12-05 00:44:18.729 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Startup Initializing...
+2019-12-05 00:44:18.731 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Initializing Based on Default Property File...
+2019-12-05 00:44:18.733 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Initializing...
+2019-12-05 00:44:19.093 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Loading 2 caches
+2019-12-05 00:44:19.094 [pool-3-thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to initialize the Cache
+java.lang.UnsupportedOperationException: null
+	at java.util.Collections$UnmodifiableMap.remove(Unknown Source) ~[?:1.8.0_221]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:391) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:241) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:173) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:44:19.134 [pool-3-thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to Initialize using Default Property File
+java.lang.UnsupportedOperationException: null
+	at java.util.Collections$UnmodifiableMap.remove(Unknown Source) ~[?:1.8.0_221]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:391) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:241) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:173) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:44:19.149 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Reloading Started - 2019-12-05 00:44:19.144
+2019-12-05 00:44:19.149 [pool-3-thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to Re-Load Data
+java.lang.NullPointerException: null
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.getReadCache(InfluxCacheServer.java:740) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.load(InfluxCacheServer.java:443) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:174) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:44:19.150 [pool-3-thread-1] FATAL CNO CCN 30 Day Duplication Service - Unable to Initialize Service - Monitoring will not be started
+java.lang.NullPointerException: null
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.getReadCache(InfluxCacheServer.java:740) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.load(InfluxCacheServer.java:443) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:174) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:45:32.478 [Thread-1] INFO  com.mqa.daemonserver.cli.MQADaemonRunner - Shutting down...
+2019-12-05 00:45:32.479 [Thread-1] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Stopping Daemon mqa.daemon.impl.WMQMultiQueueReaderDaemon...
+2019-12-05 00:45:32.479 [Thread-1] INFO  CNO CCN 30 Day Duplication Service - Termination Cleanup...
+2019-12-05 00:45:32.480 [Thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to flush
+java.lang.NullPointerException: null
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.getWriteCache(InfluxCacheServer.java:747) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.flush(InfluxCacheServer.java:644) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.stop(InfluxCacheServer.java:214) [MQADaemonServer.jar:?]
+	at mqa.daemon.abstracts.BaseMQADaemon.shutdown(BaseMQADaemon.java:72) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cli.MQADaemonRunner$1.run(MQADaemonRunner.java:96) [MQADaemonServer.jar:?]
+2019-12-05 00:45:34.984 [main] INFO  com.mqa.daemonserver.cli.MQADaemonRunner - MQAttach Canada Inc Daemon Module (WMQMultiQueueReaderDaemon) v.01.00.00.02 
+© 2008 MQAttach Canada Inc and associated Companies - All rights reserved
+All other libraries in use copyright their respective owners
+2019-12-05 00:45:34.988 [main] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Initializing Daemon mqa.daemon.impl.WMQMultiQueueReaderDaemon
+2019-12-05 00:45:34.997 [main] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Initializing WMQ Reader CNO CCN 30 Day Duplication Service v. 01.00.00.01 
+2019-12-05 00:45:34.998 [pool-2-thread-1] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Starting the Daemon with 1 Threads...
+2019-12-05 00:45:36.051 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Startup Initializing...
+2019-12-05 00:45:36.052 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Initializing Based on Default Property File...
+2019-12-05 00:45:36.054 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Initializing...
+2019-12-05 00:45:36.397 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Loading 2 caches
+2019-12-05 00:45:36.397 [pool-3-thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to initialize the Cache
+java.lang.UnsupportedOperationException: null
+	at java.util.Collections$UnmodifiableMap.remove(Unknown Source) ~[?:1.8.0_221]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:391) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:241) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:173) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:45:36.432 [pool-3-thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to Initialize using Default Property File
+java.lang.UnsupportedOperationException: null
+	at java.util.Collections$UnmodifiableMap.remove(Unknown Source) ~[?:1.8.0_221]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:391) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:241) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:173) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:45:36.446 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Reloading Started - 2019-12-05 00:45:36.441
+2019-12-05 00:45:36.446 [pool-3-thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to Re-Load Data
+java.lang.NullPointerException: null
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.getReadCache(InfluxCacheServer.java:740) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.load(InfluxCacheServer.java:443) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:174) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:45:36.447 [pool-3-thread-1] FATAL CNO CCN 30 Day Duplication Service - Unable to Initialize Service - Monitoring will not be started
+java.lang.NullPointerException: null
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.getReadCache(InfluxCacheServer.java:740) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.load(InfluxCacheServer.java:443) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:174) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:45:47.980 [Thread-1] INFO  com.mqa.daemonserver.cli.MQADaemonRunner - Shutting down...
+2019-12-05 00:45:47.980 [Thread-1] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Stopping Daemon mqa.daemon.impl.WMQMultiQueueReaderDaemon...
+2019-12-05 00:45:47.981 [Thread-1] INFO  CNO CCN 30 Day Duplication Service - Termination Cleanup...
+2019-12-05 00:56:55.423 [main] INFO  com.mqa.daemonserver.cli.MQADaemonRunner - MQAttach Canada Inc Daemon Module (WMQMultiQueueReaderDaemon) v.01.00.00.02 
+© 2008 MQAttach Canada Inc and associated Companies - All rights reserved
+All other libraries in use copyright their respective owners
+2019-12-05 00:56:55.426 [main] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Initializing Daemon mqa.daemon.impl.WMQMultiQueueReaderDaemon
+2019-12-05 00:56:55.434 [main] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Initializing WMQ Reader CNO CCN 30 Day Duplication Service v. 01.00.00.01 
+2019-12-05 00:56:55.436 [pool-2-thread-1] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Starting the Daemon with 1 Threads...
+2019-12-05 00:56:56.472 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Startup Initializing...
+2019-12-05 00:56:56.473 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Initializing Based on Default Property File...
+2019-12-05 00:56:56.475 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Initializing...
+2019-12-05 00:56:56.825 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Loading 2 caches
+2019-12-05 00:56:56.825 [pool-3-thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to initialize the Cache
+java.lang.UnsupportedOperationException: null
+	at java.util.Collections$UnmodifiableMap.remove(Unknown Source) ~[?:1.8.0_221]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:391) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:241) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:173) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:56:56.866 [pool-3-thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to Initialize using Default Property File
+java.lang.UnsupportedOperationException: null
+	at java.util.Collections$UnmodifiableMap.remove(Unknown Source) ~[?:1.8.0_221]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:391) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:241) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:173) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:56:56.880 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Reloading Started - 2019-12-05 00:56:56.875
+2019-12-05 00:56:56.880 [pool-3-thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to Re-Load Data
+java.lang.NullPointerException: null
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.getReadCache(InfluxCacheServer.java:740) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.load(InfluxCacheServer.java:443) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:174) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 00:56:56.881 [pool-3-thread-1] FATAL CNO CCN 30 Day Duplication Service - Unable to Initialize Service - Monitoring will not be started
+java.lang.NullPointerException: null
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.getReadCache(InfluxCacheServer.java:740) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.load(InfluxCacheServer.java:443) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:174) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 01:04:51.006 [Thread-1] INFO  com.mqa.daemonserver.cli.MQADaemonRunner - Shutting down...
+2019-12-05 01:04:51.008 [Thread-1] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Stopping Daemon mqa.daemon.impl.WMQMultiQueueReaderDaemon...
+2019-12-05 01:04:51.008 [Thread-1] INFO  CNO CCN 30 Day Duplication Service - Termination Cleanup...
+2019-12-05 01:28:41.103 [main] INFO  com.mqa.daemonserver.cli.MQADaemonRunner - MQAttach Canada Inc Daemon Module (WMQMultiQueueReaderDaemon) v.01.00.00.02 
+© 2008 MQAttach Canada Inc and associated Companies - All rights reserved
+All other libraries in use copyright their respective owners
+2019-12-05 01:28:41.107 [main] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Initializing Daemon mqa.daemon.impl.WMQMultiQueueReaderDaemon
+2019-12-05 01:28:41.116 [main] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Initializing WMQ Reader CNO CCN 30 Day Duplication Service v. 01.00.00.01 
+2019-12-05 01:28:41.118 [pool-2-thread-1] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Starting the Daemon with 1 Threads...
+2019-12-05 01:28:42.163 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Startup Initializing...
+2019-12-05 01:28:42.164 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Initializing Based on Default Property File...
+2019-12-05 01:28:42.167 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Initializing...
+2019-12-05 01:28:42.574 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Loading 2 caches
+2019-12-05 01:28:42.575 [pool-3-thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to initialize the Cache
+java.lang.UnsupportedOperationException: null
+	at java.util.Collections$UnmodifiableMap.remove(Unknown Source) ~[?:1.8.0_221]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:391) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:241) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:173) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 01:28:42.610 [pool-3-thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to Initialize using Default Property File
+java.lang.UnsupportedOperationException: null
+	at java.util.Collections$UnmodifiableMap.remove(Unknown Source) ~[?:1.8.0_221]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:391) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.initialize(InfluxCacheServer.java:241) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:173) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 01:28:42.623 [pool-3-thread-1] INFO  CNO CCN 30 Day Duplication Service - Reloading Started - 2019-12-05 01:28:42.618
+2019-12-05 01:28:42.623 [pool-3-thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to Re-Load Data
+java.lang.NullPointerException: null
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.getReadCache(InfluxCacheServer.java:740) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.load(InfluxCacheServer.java:443) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:174) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 01:28:42.624 [pool-3-thread-1] FATAL CNO CCN 30 Day Duplication Service - Unable to Initialize Service - Monitoring will not be started
+java.lang.NullPointerException: null
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.getReadCache(InfluxCacheServer.java:740) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.load(InfluxCacheServer.java:443) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.run(InfluxCacheServer.java:174) [MQADaemonServer.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2019-12-05 01:29:06.362 [Thread-1] INFO  com.mqa.daemonserver.cli.MQADaemonRunner - Shutting down...
+2019-12-05 01:29:06.362 [Thread-1] INFO  mqa.daemon.impl.WMQMultiQueueReaderDaemon - Stopping Daemon mqa.daemon.impl.WMQMultiQueueReaderDaemon...
+2019-12-05 01:29:06.363 [Thread-1] INFO  CNO CCN 30 Day Duplication Service - Termination Cleanup...
+2019-12-05 01:29:06.363 [Thread-1] ERROR CNO CCN 30 Day Duplication Service - Unable to flush
+java.lang.NullPointerException: null
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.getWriteCache(InfluxCacheServer.java:747) ~[MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.flush(InfluxCacheServer.java:644) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cache.impl.InfluxCacheServer.stop(InfluxCacheServer.java:214) [MQADaemonServer.jar:?]
+	at mqa.daemon.abstracts.BaseMQADaemon.shutdown(BaseMQADaemon.java:72) [MQADaemonServer.jar:?]
+	at com.mqa.daemonserver.cli.MQADaemonRunner$1.run(MQADaemonRunner.java:96) [MQADaemonServer.jar:?]

@@ -1,0 +1,57 @@
+<Configuration>
+    <Appenders>
+		<RollingFile name="RollingFileInfo" fileName="logs/MongoJava_${sys:logFile}.info.log"  filePattern="logs/$${date:yyyy-MM}/MongoJava_${sys:logFile}-%d{MM-dd-yyyy}-%i.infolog.gz">
+			<PatternLayout>
+				<Pattern>%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Pattern>				
+			</PatternLayout>
+			<Filters>
+				<BurstFilter level="INFO" rate="100" maxBurst="200"/>
+				<BurstFilter level="WARN" rate="100" maxBurst="200"/>
+				<ThresholdFilter level="INFO" onMatch="ACCEPT"/>
+				<ThresholdFilter level="WARN" onMatch="ACCEPT"/>
+				<ThresholdFilter level="ERROR" onMatch="DENY" onMismatch="NEUTRAL"/>
+				<ThresholdFilter level="FATAL" onMatch="DENY" onMismatch="NEUTRAL"/>
+			</Filters>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+			 <DefaultRolloverStrategy max="5"/>
+		</RollingFile>
+		<RollingFile name="RollingFileErrors" fileName="logs/MongoJava_${sys:logFile}.errors.log"  filePattern="logs/$${date:yyyy-MM}/MongoJava_${sys:logFile}-%d{MM-dd-yyyy}-%i.errorlog.gz">
+			<PatternLayout>
+				<Pattern>%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Pattern>				
+			</PatternLayout>
+			<Filters>
+				<ThresholdFilter level="ERROR"/>
+			</Filters>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+			 <DefaultRolloverStrategy max="5"/>
+		</RollingFile>
+
+		<RollingFile name="RollingFileDebug" fileName="logs/MongoJava_${sys:logFile}.debug.log"  filePattern="logs/$${date:yyyy-MM}/MongoJava_${sys:logFile}-%d{MM-dd-yyyy}-%i.debuglog.gz">
+			<PatternLayout>
+				<Pattern>%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Pattern>				
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+<Filters>
+				<ThresholdFilter level="ALL" onMatch="ACCEPT"/>
+</Filters>
+
+			 <DefaultRolloverStrategy max="20"/>
+		</RollingFile>
+
+    </Appenders>
+    <Loggers>
+	<Root level="trace" additivity="false">
+		<AppenderRef ref="RollingFileInfo"/>
+		<AppenderRef ref="RollingFileErrors"/>
+	</Root>
+    </Loggers>
+</Configuration>
