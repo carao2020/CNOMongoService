@@ -1,0 +1,27 @@
+{
+  "listeners": [
+    {
+      "queue": "HIX.ITXA.MONGODB.WRITE",
+      "service": {
+        "name": "Mongo CRUD Service",
+        "prefix": "MongoC"
+      },
+      "mq":
+      {
+        "replyQueue": "HIX.ITXA.MONGODB.REPLY",
+        "replyQM":"ITXQM"
+      },
+      "db":
+      {
+         "uri":"mongodb://mongo.dc.mqattach.com:4017/?authSource=admin",
+        "name":"GTM_CNO"
+      },
+      "class": "com.mqa.cno.impl.CNOMongoService",
+      "errors": 
+ 	{
+	   "queue": "HIX.ITXA.MONGODB.ERROR",
+        "expiry": 144000
+	}
+    }
+  ]
+}

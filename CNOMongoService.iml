@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="jackson" level="application" />
+    <orderEntry type="library" name="MQV9" level="application" />
+    <orderEntry type="library" name="Log4j" level="application" />
+    <orderEntry type="library" name="MongoDB" level="application" />
+    <orderEntry type="module" module-name="MQA.Core.Engine" />
+    <orderEntry type="module" module-name="MQA.Daemon.Engine" />
+    <orderEntry type="module" module-name="MQA.MQ.Engine" />
+    <orderEntry type="module" module-name="MQADaemonServer" />
+  </component>
+</module>

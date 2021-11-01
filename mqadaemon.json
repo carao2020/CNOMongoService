@@ -1,0 +1,8 @@
+{
+  "MQ": {
+    "qm": "ITXQM",
+    "port": 14141,
+    "channel": "ITXA.MONGOSVC.SVRCONN",
+    "hosts": "192.168.1.55"
+  }
+}
